@@ -5,9 +5,9 @@ const skillsCtrl = require('../controllers/skills');
 
 router.get('/', skillsCtrl.index);
 
-router.get('/:id', skillsCtrl.show);
-
 router.get('/new', skillsCtrl.new);
+
+router.get('/:id', skillsCtrl.show);
 
 router.get('/:id/edit', skillsCtrl.edit);
 

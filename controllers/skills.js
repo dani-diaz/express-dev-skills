@@ -34,7 +34,7 @@ res.redirect('/skills');
 }
 
 function newSkill(req, res) {
-res.render('skills/new');
+res.render('skills/new', {title:'New Skill'});
 }
 
 function index(req, res) {
@@ -44,6 +44,6 @@ function index(req, res) {
 
 function show(req, res) {
     const param = parseInt(req.params.id);
-    const skill = Skill.getById(param);
+    const skill = Skill.getOne(param);
     res.render('skills/show', {skill});
 }

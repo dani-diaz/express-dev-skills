@@ -7,7 +7,7 @@ const skills = [
 
 module.exports = {
     getAll,
-    getById,
+    getOne,
     create,
     deleteOne,
     update
@@ -35,7 +35,7 @@ function getAll() {
     return skills;
 }
 
-function getById(id) {
+function getOne(id) {
     return skills.find(function(skill) {
         return skill.id === id 
     })
