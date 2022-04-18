@@ -1,5 +1,5 @@
 const Skill = require('../models/skill');
-const { render } = require('../server');
+
 
 module.exports = {
     index,
@@ -23,13 +23,14 @@ res.render('skills/edit', { skill });
 }
 
 function deleteSkill(req, res) {
-
+    console.log(req.params.purpletuna);
+Skill.deleteOne(req.params.purpletuna);
 res.redirect('/skills'); 
 }
 
 function create(req, res) {
 // console.log(req.body);
-Skills.create(req.body);
+Skill.create(req.body);
 res.redirect('/skills'); 
 }
 
