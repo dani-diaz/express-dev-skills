@@ -1,6 +1,6 @@
 const skills = [
     {id: 12345, skill: 'Communication', done:true},
-    {id: 12346, skill: 'Poblem Solving', done:true},
+    {id: 12346, skill: 'Problem Solving', done:true},
     {id: 12347, skill: 'Managment', done:true},
     {id: 12348, skill: 'Planning', done:true}
 ]
